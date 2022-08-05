@@ -1,0 +1,60 @@
+@media (min-width: 660px) and (max-width: 992px) {
+  .section-details {
+    &-items {
+      justify-items: center;
+
+      &-itme:last-child {
+        grid-column: span 2;
+        margin-top: 1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 568px) {
+  // Items
+  .section-faq .faq {
+    width: 100%;
+    margin: 1rem auto;
+  }
+
+  .section-faq .faq-title {
+    font-size: 1.5rem;
+  }
+
+  .section-faq {
+    padding-top: 0;
+    padding-bottom: 1.3rem;
+  }
+  .skill-card {
+    margin-top: 3rem;
+  }
+
+  .section-contact-header {
+    padding-bottom: 2rem;
+  }
+
+  .items {
+    grid-template-columns: 1fr;
+  }
+
+  .section-contact {
+    padding-top: 21rem;
+    padding-bottom: 3rem;
+  }
+  .section-contact-content {
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  .section-contact-content-items {
+    margin-bottom: 5.5rem !important;
+  }
+  
+  .section-head {
+    display: none;
+  }
+
+}
+@media (max-width: 350px) {
+}

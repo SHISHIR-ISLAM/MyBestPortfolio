@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 0.4s ease-in;
+    overflow-x: hidden;
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-family: $poppins;
+    line-height: 1.6;
+    background: #ffffff;
+    position: relative;
+}
+
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+ul {
+    list-style: none;
+}
+
+
+img {
+    width: 100%;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 1.2;
+    margin: 0.7rem 0;
+}
+
+
+p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+
+.container {
+    max-width: 1199px;
+    margin: auto;
+    padding: 0 2rem;
+}
+
+
+// end of custom css 

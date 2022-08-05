@@ -1,0 +1,196 @@
+// showcase heading 
+@keyframes moveToLeft {
+    0% {
+        transform: translateX(-100px);
+    }
+
+    60% {
+        transform: translateX(15px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+
+}
+
+
+
+@keyframes moveToRight {
+    0% {
+        transform: translateX(100px);
+    }
+
+    60% {
+        transform: translateX(-15px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+
+}
+
+
+
+@keyframes moveToBottom {
+    0% {
+        transform: translateY(100px);
+    }
+
+    60% {
+        transform: translateY(-5px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+
+}
+
+
+
+@keyframes topToBottom {
+    0% {
+        position: absolute;
+        transform: translateY(40px);
+        opacity: 0.3;
+    }
+
+    100% {
+        position: absolute;
+        transform: translateY(0);
+        opacity: 0.6;
+    }
+
+}
+
+
+// wave animation 
+
+@keyframes animateWave {
+
+    0% {
+        background-position-x: 1000px;
+    }
+
+    100% {
+        background-position-x: 0px;
+    }
+}
+
+@keyframes animateWave_02 {
+
+    0% {
+        background-position-x: 0px;
+    }
+
+    100% {
+        background-position-x: 1100px;
+    }
+}
+
+
+// animate Line 
+@keyframes animateLine {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+// border animation 
+@keyframes borderAnimate {
+    0% {
+        border-color: rgb(140, 0, 255);
+    }
+
+    35% {
+        border-color: aqua;
+    }
+
+    50% {
+        border-color: rgb(0, 255, 0);
+    }
+
+    75% {
+        border-color: coral;
+    }
+
+    90% {
+        border-color: rgb(255, 17, 0);
+    }
+
+    100% {
+        border-color: rgb(233, 64, 182);
+    }
+
+}
+@keyframes labelAnimation { 
+    0% {
+        color: rgb(140, 0, 255);
+    }
+
+    35% {
+        color: aqua;
+    }
+
+    50% {
+        color: rgb(0, 255, 0);
+    }
+
+    75% {
+        color: coral;
+    }
+
+    90% {
+        color: rgb(255, 17, 0);
+    }
+
+    100% {
+        color: rgb(233, 64, 182);
+    }
+
+}
+
+
+// submit animation 
+@keyframes submitAni  {
+    0% {
+
+        background: rgb(140, 0, 255);
+        color: #fff;
+    }
+
+    35% {
+        background: aqua;
+        color: #fff;
+    }
+
+    50% {
+        background: rgba(0, 255, 0, 0.803);
+        color: #fff;
+    }
+
+    75% {
+        background: rgb(255, 68, 0);
+        color: #fff;
+    }
+
+    90% {
+        background: rgb(246, 62, 48);
+        color: rgb(12, 8, 8);
+    }
+
+    100% {
+        background: rgb(233, 64, 182);
+        color: rgb(40, 40, 40);
+    }
+
+}
+
+
+

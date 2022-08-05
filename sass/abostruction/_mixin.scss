@@ -1,0 +1,31 @@
+// absolute position
+@mixin absCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+// easeOut 
+@mixin  easeOut {
+    transition: all .7s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+
+// flex Center 
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+// media 
+
+@mixin sm {
+    @media (max-width: 500px) {
+        @content;
+    }
+}
+

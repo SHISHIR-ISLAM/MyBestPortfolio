@@ -1,0 +1,168 @@
+.section {
+
+    &-contact {
+        color: #fff;
+        padding-top: 19rem;
+        padding-bottom: 3.5rem;
+        background: rgba(37, 29, 29, 0.428);
+        min-height: 100vh;
+        margin: 0 !important;
+        position: relative;
+        top: -5rem;
+
+        &-header {
+            position: relative;
+            padding-bottom: 5rem;
+            color: #111;
+
+            .heading-sm {
+                font-size: 1.3rem;
+                color: $primary-color;
+                position: absolute;
+                display: inline-block;
+                left: 50%;
+                transform: translateX(-50%);
+                top: -3rem;
+
+
+                &::after,
+                &::before {
+                    content: '';
+                    position: absolute;
+                    height: 1px;
+                    width: 3rem;
+                    background: $primary-color;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+
+                &::after {
+                    left: -3.5rem;
+                }
+
+                &::before {
+                    right: -3.5rem;
+                }
+            }
+        }
+
+        &-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+
+            &-items {
+
+
+                &:nth-child(3) {
+                    grid-column: span 2;
+
+                }
+
+                &:last-child {
+                    grid-column: span 2;
+                }
+
+
+                .section-contact-content-item {
+                    position: relative;
+                    margin-bottom: 5rem;
+                    display: block;
+                    text-align: center;
+
+                    &:last-child {
+                        margin-bottom: 1.5rem;
+                    }
+
+                    input,
+                    textarea {
+                        width: 100%;
+                        background: transparent;
+                        border: none;
+                        border-bottom: 1px solid #fff;
+                        padding: .7rem .5rem;
+                        animation: borderAnimate 4s ease-in-out infinite alternate;
+                        color: #fff;
+                    }
+
+                    textarea {
+                        padding: .1rem .5rem;
+                    }
+
+
+                    label {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                    }
+                    
+                    label span {
+                        transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+                        animation: labelAnimation 4s ease-in-out infinite alternate;
+                    }
+
+                    input:focus + label span,
+                    input:valid + label span,
+                    textarea:focus +label span {
+                        color: lightblue;
+                        min-width: 5px;
+                        transform: translateY(-2.5rem);
+                        display: inline-block;
+                    }
+
+                    .email:valid + label span {
+                        transform: translateY(-2.5rem);
+                        display: inline-block;
+                    }
+                    
+                    .email:valid {
+                        background: transparent;
+                    }
+
+                    input:focus ,
+                    input:valid ,
+                    textarea:focus,
+                    textarea:valid{
+                        border-bottom-color: lightblue;
+                        background: transparent;
+                    }
+
+                    input:focus,
+                    textarea:focus {
+                        outline: none;
+                    } 
+
+                    .textarea + label {
+                        top: -2rem;
+                    }
+
+                    .textarea {
+                        padding: 1rem 0;
+                    }
+
+                    input[type="submit"] {
+                        width: 65%;
+                        background: rgb(255, 255, 255);
+                        font-size: 1.7rem;
+                        border: none;
+                        color: #222;
+                        cursor: pointer;
+                        position: relative;
+                        // transition: all 0.5s ease-in;
+                        animation: submitAni 4s ease-in-out infinite alternate;
+                        
+
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+
+                }
+            }
+
+        }
+
+    }
+
+
+}

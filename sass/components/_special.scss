@@ -1,0 +1,104 @@
+// special 
+#special {
+    font-family: $nunito;
+    font-weight: 400;
+    
+    .header {
+        position: relative;
+    }
+
+    .container {
+
+        // div {
+
+
+        //     .start {
+        //         position: absolute;
+        //         text-align: center;
+        //         display: inline-block;
+        //         left: 49%;
+        //         top: 29%;
+        //         transform: translateX(-50%);
+
+        //         &::after {
+        //         content: '*';
+        //         position: absolute;
+        //         font-size: 4.5rem;
+        //         color: rgb(75, 73, 73);
+        //         }
+        //     }
+        // }
+
+
+        .special-content {
+
+
+            .special-item {
+                // box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2),  -1px -1px 1px rgba(0, 0, 0, 0.2);
+                box-shadow:
+                    -0.1px -0.1px 5px #b7bbbd8e,
+                    0.1px 0.1px 5px #90a4ae8e;
+                padding: 2rem;
+                border-radius: 3px;
+                transition: 0.4s ease;
+                position: relative;
+                overflow: hidden;
+                // box-shadow: 0px 0px 10px rgba(0, 0,0, .1);
+
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    height: 0%;
+                    width: 100%;
+                    background: linear-gradient(to bottom left, #93a5cf, #e4efe9);
+                    transition: all 0.9s cubic-bezier(0.33, 1, 0.68, 1);
+
+                    z-index: -1;
+                }
+
+                &:hover::after {
+                    height: 100%;
+                }
+
+
+
+                &:hover {
+                    transform: translateY(-15px);
+                }
+
+                &:hover .spc-icon {
+                    transform: scale(1.3);
+                    color: #444;
+                }
+
+                .spc-icon {
+                    color: #212529a8;
+                    padding: 2rem 0;
+                    transition: 0.5s ease;
+
+                }
+
+                .spc-item-heading {
+                    color: #212529;
+                    font-size: 2.3rem;
+                }
+
+                .spc-item-txt {
+                    color: #6c757d;
+                }
+            }
+        }
+
+
+
+        .section-text {
+            max-width: 85rem;
+            margin: 1rem auto 5.5rem;
+        }
+
+    }
+
+}

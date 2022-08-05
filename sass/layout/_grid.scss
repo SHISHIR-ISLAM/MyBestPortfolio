@@ -1,0 +1,17 @@
+.grid_1fr_2fr {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 3rem;  
+}
+
+.education-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.9fr;
+    grid-template-rows: auto;
+    grid-gap: 2rem;
+}
+
+.grid__4x {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}

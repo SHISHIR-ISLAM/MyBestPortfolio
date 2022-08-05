@@ -1,0 +1,38 @@
+.section {
+
+    &-content {
+
+        .status {
+            font-family: $nunito;
+            font-weight: 500;
+            padding: 2rem 0;
+
+            li {
+                line-height: 2;
+
+                .stats-title {
+                    font-size: 1.5rem;
+                    font-weight: 500;
+                }
+
+                .stats-number {
+                    font-size: 2rem;
+                    font-weight: bold;
+                }
+            }
+
+            div {
+                padding: 7rem 0 3rem;
+                text-align: center;
+
+                &:nth-child(odd) {
+                    background: #ccc;
+                }
+
+                &:nth-child(even) {
+                    background: #f4f4f4;
+                }
+            }
+        }
+    }
+}

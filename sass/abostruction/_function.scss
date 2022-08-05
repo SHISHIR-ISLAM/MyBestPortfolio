@@ -1,0 +1,5 @@
+@for $x from 1 through 4 {
+    .navbar__toggle-menu-list-s-item:nth-child(#{$x}) {
+        transition-delay: $x * .15s;
+    }
+}

@@ -1,0 +1,112 @@
+.section {
+
+    &-faq {
+        background: #f0f0f0;
+        padding: 7rem 0;
+        
+        .faq {
+            transition: 1s ease;
+            
+            &-header {
+                position: relative;
+                padding-bottom: 3.5rem;
+
+                .heading-sm {
+                    top: -3rem;
+                }
+            }
+
+            font-family: 'Segoe UI',
+            Tahoma,
+            Geneva,
+            Verdana,
+            sans-serif;
+            max-width: 70rem;
+            margin: 2rem auto;
+            background: transparent;
+            border: 1px solid #9fa4a8;
+            padding: 3rem;
+            overflow: hidden;
+            position: relative;
+            border-radius: 1rem;
+
+            &-title {
+                margin: 0 3.5rem 0 0;
+            }
+
+            &-text {
+                margin: 3rem 0 0 0;
+                display: none;
+            }
+
+
+            &-btn {
+                position: absolute;
+                top: 3rem;
+                right: 3rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: none;
+                background: transparent;
+                font-size: 1.7rem;
+                width: 3rem;
+                height: 3rem;
+                cursor: pointer;
+            }
+
+            &-btn .fa-times {
+                display: none;
+            }
+
+
+            &.active {
+                background: #fff;
+                box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1),
+                    0px 3px 6px rgba(0, 0, 0, 0.1);
+
+
+                .faq-text {
+                    display: block;
+                }
+
+                .faq-btn .fa-times {
+                    display: block;
+                }
+
+                .faq-btn {
+                    background: #9fa4a8;
+                    border-radius: 50%;
+                    color: #fff;
+                }
+
+                .fa-chevron-down {
+                    display: none;
+                }
+
+
+                &::after,
+                &::before {
+                    content: '\f075';
+                    font-family: 'Font Awesome 5 Free';
+                    color: #2ecc71;
+                    font-size: 7rem;
+                    position: absolute;
+                    top: 2rem;
+                    left: 2rem;
+                    z-index: 1;
+                    opacity: .2;
+                }
+
+                &::before {
+                    color: #3498db;
+                    top: -2rem;
+                    left: -3rem;
+                    transform: rotateY(180deg);
+                }
+            }
+
+        }
+
+    }
+}

@@ -1,0 +1,120 @@
+// skill
+#skill {
+  background: #f5f5f5;
+  font-family: $nunito;
+  
+  .container {
+      .skill-header {
+        position: relative; 
+      color: #252922;
+    }
+
+    .skill-btn {
+      & > a {
+        margin-right: 2rem;
+        color: #6c757d;
+        position: relative;
+
+        &::after {
+          content: '';
+          position: absolute;
+          top: 50%;
+          right: -1.5rem;
+          transform: translateY(-50%);
+          color: #ddd;
+          font-size: 3rem;
+          height: 0.7rem;
+          width: 0.7rem;
+          border-radius: 50%;
+          background: rgb(196, 161, 161);
+        }
+
+        &:last-child::after {
+          content: none;
+        }
+      }
+    }
+
+    p {
+      color: #6c757d;
+      max-width: 70rem;
+      margin: auto;
+      margin-bottom: 5rem;
+    }
+
+    .skills-content {
+      .skills-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+
+        & > div {
+          width: 48%;
+        }
+
+        h3 {
+          color: #000;
+          font-size: 1.7rem;
+          margin-bottom: 1rem;
+          font-family: $nunito;
+          font-weight: 700;
+        }
+
+        .skills-items {
+          background: #ccc;
+          height: 0.4rem;
+          position: relative;
+          margin-bottom: 3rem;
+
+          .prog {
+            height: 100%;
+            width: 80%;
+            background: #212529;
+            z-index: 2;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: inline-block;
+
+            &.html {
+              width: 95%;
+            }
+            &.css {
+              width: 85%;
+            }
+
+            &.js {
+              width: 70%;
+            }
+
+            &.react {
+              width: 63%;
+            }
+
+            &.photo {
+              width: 71%;
+            }
+            &.bst {
+              width: 83%;
+            }
+
+            &.sass {
+              width: 79%;
+            }
+            &.jqr {
+              width: 77%;
+            }
+          }
+
+          .prog-par {
+            position: absolute;
+            top: -3rem;
+            right: 0;
+            color: rgba(69, 69, 69, 0.916);
+          }
+        }
+      }
+    }
+  }
+}

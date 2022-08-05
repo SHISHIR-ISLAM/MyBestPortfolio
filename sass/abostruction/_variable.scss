@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+// fonts 
+$poppins: 'Poppins', sans-serif;
+$nunito: 'Nunito', sans-serif;
+
+// Variables 
+$primary-color: #F52225;
+$primary-color-1: #F75023;
+$secondary-color: #393939;
+$accent-color: #eec31a;
+$light-color: #fff;
+$light-color-4: #f4f4f4;
+$dark-color: #000;
+$dark-color-1: #111;
+$dark-color-3: #333;
+$gray-color: #ccc;
+
+
+// color mode 
+section.night .spc-icon  i,
+section.night .spc-item-heading,
+section.night .spc-item-txt,
+section.night .section-heading,
+section.night h1,
+section.night h2, 
+section.night h3, 
+section.night h4, 
+section.night h5, 
+section.night h6,
+section.night p,
+section.night a,
+section.night span
+{
+    color: #fff !important;
+}
+
+section.night .heading-sm {
+    color: $primary-color !important; 
+}
+
+
+footer .footer-content .wave.night {
+    background: url(../../Vector15.png);
+}
+
+
+
+
+

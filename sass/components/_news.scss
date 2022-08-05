@@ -1,0 +1,43 @@
+// news 
+#news {
+    font-family: $nunito;
+    
+    
+    .news-header {
+        position: relative;
+
+        p {
+            max-width: 65rem;
+            margin: auto;
+        }
+    }
+
+    .news {
+        margin-top: 3rem;
+
+        .input-group {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #fdefef;
+            width: 50%;
+            margin: auto;
+            border-radius: 50px;
+            padding: .3rem;
+
+            input {
+                border: none;
+                padding: 1.3rem 3rem;
+                flex: 1;
+                background: transparent;
+                border: none;
+                outline: none;
+                color: #4c5657;
+                font-family: $nunito;
+                font-size: 1.7rem;
+            }
+        }
+    }
+
+
+}

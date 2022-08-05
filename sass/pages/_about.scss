@@ -1,0 +1,63 @@
+.section {
+
+    &-about {
+
+        &-header {
+            position: relative;
+            padding-bottom: 2.5rem;
+
+            h2 {
+                color: #0F172A;
+            }
+
+            h5 {
+                top: -3rem;
+            }
+        }
+
+
+        &-content {
+
+
+            &-img {
+                height: 22rem;
+                overflow: hidden;
+                border-radius: .5rem;
+
+                img {
+                    object-fit: cover;
+                    height: 150%;
+                }
+            }
+
+            &-text {
+                background: #c8c8c8;
+                padding: 3rem;
+                border-left: 3px solid $accent-color;
+
+                h3 {
+                    color: rgb(73, 73, 73);
+                }
+
+                p {
+                    color: #6c757d;
+                }
+            }
+
+        }
+    }
+
+    &-education {
+        padding-top: 17rem;
+        padding-bottom: 10rem;
+
+        header {
+            padding-bottom: 2rem; 
+        }
+    }
+
+    &-img {
+        padding-top: 5rem;
+    }
+
+}

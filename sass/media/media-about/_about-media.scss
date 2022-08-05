@@ -1,0 +1,110 @@
+@media (max-width: 992px) {
+  .education-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .section-about-card-inner {
+    justify-items: center;
+  }
+}
+@media (max-width: 1020px) {
+}
+
+// md
+@media (max-width: 786px) {
+  .section {
+
+    &-about-card {
+        padding-bottom: 0rem !important;
+    }
+    
+    &-education {
+        padding: 15rem 0 3rem 0;
+    }
+    &-education header {
+        padding-bottom: 0;
+    }
+    &-education-content  {
+        padding-top: 0rem;
+    } 
+
+    &-about-header {
+      padding-bottom: 0rem;
+      h2 {
+        margin-bottom: 3rem;
+        padding-bottom: 0rem;
+      }
+    }
+  }
+
+  .education-grid {
+    grid-template-columns: 1fr;
+  }
+  .status.grid__4x {
+    grid-template-columns: 1fr 1fr;
+
+    & div:nth-child(1n) {
+      background: #ccc;
+    }
+
+    & div:nth-child(2) {
+      background: #f4f4f4;
+    }
+    & div:nth-child(3) {
+      background: #f4f4f4;
+    }
+  }
+}
+
+// sm
+@media (max-width: 568px) {
+  .section-padding {
+    padding: 4rem 0;
+  }
+  .status.grid__4x {
+    grid-template-columns: 1fr;
+
+    & div:nth-child(odd) {
+      background: #ccc;
+    }
+
+    & div:nth-child(even) {
+      background: #f4f4f4;
+    }
+  }
+  .education-inner-content {
+    display: none;
+  }
+  .education-inner {
+    display: none;
+  }
+
+  .section-education-content  {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 356px) {
+  .education-inner-content {
+    display: none;
+  }
+  .section-about-card-inner-item-content::before {
+    content: none;
+  }
+  .education-inner {
+    display: none;
+  }
+
+  .section {
+    &-about-card {
+        padding: 2rem 0rem;
+    }
+
+    &-heading {
+        font-size: 2rem;
+        padding-bottom: 1rem;
+        margin-bottom: 0;
+    }
+
+  }
+
+}

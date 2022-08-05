@@ -1,0 +1,88 @@
+// nav 
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    box-shadow: 1px 1px 3px rgba(249, 73, 93, 0.1);
+
+    .nav-logo {
+
+        a {
+            font-size: 3.5rem;
+            color: $light-color;
+            letter-spacing: 0.2rem;
+            font-weight: 400;
+
+            img {
+                width: 12rem;
+                height: 3rem;
+                object-fit: cover;
+            }
+        }
+    }
+
+    // nav menu 
+    .menu {
+        position: relative;
+
+        .nav-list li a {
+            position: relative;
+            margin: 0rem 1.3rem;
+            font-weight: 500;
+            color: #fff;
+
+            .first {
+                position: relative;
+                top: 0;
+                transition: 0.2s ease-in;
+            }
+
+            &:hover .first {
+                top: -19px;
+                opacity: 0;
+            }
+
+            .second {
+                position: absolute;
+                left: 0;
+                transform: translateY(110%);
+                opacity: 0;
+                transition: 0.5s ease;
+                color: $primary-color;
+
+            }
+
+            &:hover .second {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+    }
+
+    .navbar__toggle-menu {
+      position: absolute;
+      visibility: hidden;
+    }
+}
+
+.navbar {
+    transition: 0.7s;
+}
+
+.navbar.nav-active-color {
+    background: rgb(167, 151, 151);
+    transform: translateY(-1rem);
+}
+
+// about nav 
+.about-nav {
+    background: linear-gradient(30deg, rgba(214, 159, 130, 0.643) 40%, rgba(249, 73, 93, 0.437));
+    border-bottom: 3px solid $accent-color;
+}
+
+.about-nav-pro {
+    background: linear-gradient(30deg, rgba(214, 159, 130, 0.947) 40%, rgba(249, 73, 93, 0.826));
+    border-bottom: 3px solid $accent-color;
+}
